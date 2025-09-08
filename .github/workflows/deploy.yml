@@ -50,4 +50,7 @@ jobs:
           docker stop stocks
           docker rm --force stocks
           docker run -d -p 8080:8080 --name stocks iquenavarro/stocks-ci:${{ github.sha }}
+
+
+          
           
